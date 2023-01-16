@@ -1,0 +1,18 @@
+function get_data(){
+    firebase.database().ref("/"+room_name).on('value',function(snapshot){document.getElementById("out")}firebase_message_id=childkey;)
+    message_data=childdata;
+};
+function update_like(message_id){
+    console.log("clicked on like button"+message_id);
+    button_id=message_id;
+    likes=message_data['like'];
+    name=message_data['name'];
+    console.log(firebase_message_id);
+    console.log(message_data);
+    name=message_data['name_id'];
+}
+function logout(){
+    localStorage.removeItem("user_name");
+    localStorage.removeItem("room_name");
+    window.location.replace("kwitter.html");
+}
